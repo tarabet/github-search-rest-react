@@ -12,3 +12,13 @@ body {
 .SearchPanel {
   text-align: center;
 }
+
+.RepoGridListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.RepoGridList {
+
+}

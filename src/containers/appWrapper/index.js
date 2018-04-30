@@ -1,5 +1,6 @@
 import React from "react";
 import SearchPanel from "../../components/search-panel";
+import RepoGrid from "../../components/repo-grid";
 import { queryGithub } from "../../utils/common";
 import Msg from "../../config/msg";
 
@@ -41,13 +42,20 @@ export default class Index extends React.Component {
     }
 
     render() {
-        console.log(this.state);
-
         return (
             <div className="AppWrapper">
                 <SearchPanel
                     queryHandler={this.handleSearchQuery}
                 />
+                {this.state.asyncLoading && <p>Loading...</p>}
+                {
+                    this.state.items.length > 0
+                    && !this.state.asyncLoading
+                    && <RepoGrid
+                            items={this.state.items}
+                            maxResults={6}
+                        />
+                }
             </div>
         )
     }

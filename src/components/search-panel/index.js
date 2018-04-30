@@ -18,6 +18,8 @@ export default class SearchPanel extends React.Component {
     searchStringHandler(e) {
         e.preventDefault();
 
+        // Any validation logic can be placed here
+
         this.setState({
             ...this.state,
             searchString: e.target.value,
@@ -40,7 +42,7 @@ export default class SearchPanel extends React.Component {
                 />
                 <br />
                 <FlatButton
-                    label="Primary"
+                    label={Msg.searchPanel.btnLabel}
                     primary={true}
                     onClick={this.searchQueryHandler}
                 />

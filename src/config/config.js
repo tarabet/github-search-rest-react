@@ -1,0 +1,1 @@
+export const githubEndpoint = "https://api.github.com/search/repositories";

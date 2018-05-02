@@ -5,5 +5,8 @@ export default {
     },
     errMsg: {
         githubFetchErrMsg: "Github fetch err",
+    },
+    contribPanel: {
+        fetchMoreBtnLabel: "Fetch more",
     }
 }

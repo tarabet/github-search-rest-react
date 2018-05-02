@@ -19,6 +19,6 @@ body {
   justify-content: space-around;
 }
 
-.RepoGridList {
-
+.RepoSearchTile {
+  font-size: 0.8em;
 }
